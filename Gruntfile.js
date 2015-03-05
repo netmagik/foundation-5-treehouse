@@ -2,6 +2,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    watch: {
+      grunt: { files: ['Gruntfile.js'] },
+
+      sass: {
+        files: 'scss/**/*.scss',
+        tasks: ['sass'],
+        options : {
+          spawn : false,
+        }
+      }
+    },
+
+
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -13,15 +26,6 @@ module.exports = function(grunt) {
         files: {
           'css/app.css': 'scss/app.scss'
         }
-      }
-    },
-
-    watch: {
-      grunt: { files: ['Gruntfile.js'] },
-
-      sass: {
-        files: 'scss/**/*.scss',
-        tasks: ['sass']
       }
     },
 
@@ -45,7 +49,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('build', ['sass']);
+//  grunt.registerTask('build', ['sass']);
   //grunt.registerTask('default', ['build','watch']);
   grunt.registerTask('default', ["browserSync", "watch"]);
 }
