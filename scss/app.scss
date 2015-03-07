@@ -44,6 +44,9 @@
 .rnd {
 	border-radius: convert-to-rem( 6px, $rem-base);
 }
+.circle {
+	border-radius: 50%;
+}
 
 /* Banner
 =========================================== */
@@ -151,11 +154,6 @@ p {
 	line-height: 1.7;
 	font-weight: 200;
 }
-// .top-bar p {
-// 	font-weight: 500;
-// 	color: $777;
-// 	line-height: 2.4;
-// }
 
 .lead {
 	color: #d5c1f2;
@@ -164,6 +162,19 @@ p {
 .lead:nth-of-type(2) {
 	font-size: initial;
 	margin-bottom: convert-to-rem(20px, $rem-base);
+}
+
+.th-copy {
+	padding-top: convert-to-rem(30px, $rem-base);
+
+}
+
+.teacher-desc {
+	display: block; // Position on 1 line
+}
+
+hr {
+	margin-bottom: 58px;
 }
 
 /* Logos & Icons 
@@ -226,6 +237,10 @@ p {
 	margin-right: convert-to-rem(8px, $rem-base);
 }
 
+.th-logo {
+	width: convert-to-rem(155px, $rem-base);
+	margin: -.75em 0 .95em 0;
+}
 /* Buttons
 =========================================== */
 
@@ -255,7 +270,7 @@ p {
 	padding: 5px;
 	border: none;
 	right: 65px;
-	bottom: -20px;
+	bottom: convert-to-rem(-5px, $rem-base);
 
 	&:hover {
 		background: none;
