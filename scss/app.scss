@@ -1,17 +1,5 @@
 @import "settings";
 
-
-
-
-/* Layout
-=========================================== */
-
-.panel {
-	margin-top: convert-to-rem( 70px, 16px);
-}
-
-
-
 // Or selectively include components
 @import
 //   "foundation/components/accordion",
@@ -49,3 +37,147 @@
  "foundation/components/type",
 //   "foundation/components/offcanvas",
   "foundation/components/visibility";
+
+
+/* Global
+=========================================== */
+.rnd {
+	border-radius: convert-to-rem( 6px, $rem-base);
+}
+
+/* Banner
+=========================================== */
+
+.headline {
+	background: $pur url('../images/dist/main-bg.png') no-repeat 200% 100%;
+	padding: 200px 0 140px 0;
+	margin-bottom: convert-to-rem( 70px, $rem-base);
+
+	@media #{$small-only} {
+		text-align: center;
+		padding-top: convert-to-rem(95px, $rem-base);
+		padding-bottom: convert-to-rem(15px, $rem-base);
+		margin-bottom:  convert-to-rem(32px, $rem-base);
+		background-position: 10% 10%;
+		& .lead {
+			font-size: 1em;
+			margin-bottom: convert-to-rem(40px, $rem-base);
+		}
+
+	}
+}
+
+.device {
+	width: 345px;
+	height: 589px;
+	// width: convert-to-rem(345px, $rem-base);
+	// height: convert-to-rem(589px, $rem-base);
+	background: url('../images/dist/device-hero.png') no-repeat;
+}
+
+/* Layout
+=========================================== */
+
+.panel {
+	margin-top: convert-to-rem( 70px, $rem-base);
+}
+
+.top-bar {
+	min-height: convert-to-rem(80px, $rem-base);
+	padding-top: convert-to-rem(20px, $rem-base);
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
+	background: transparent;
+
+	@media #{$small-only} {
+		min-height: convert-to-rem(60px, $rem-base);
+	}
+}
+
+/* Type 
+=========================================== */
+
+h1,
+h2,
+h3 {
+	font-weight: 500;
+	line-height: 1;
+}
+h2,
+h3 {
+	color: #5f5d60;
+	font-size: 1.25em;
+	margin-bottom: convert-to-rem(16px, $rem-base);
+	margin-top: 0;
+}
+h1 {
+	font-size: convert-to-rem(63px, $rem-base);
+	font-weight: 200;
+	margin-bottom: convert-to-rem(30px, $rem-base);
+	text-shadow: 0 1px rgba(0,0,0,.5);
+
+	@media #{$small-only} {
+		font-size: 2.25em;
+
+	}
+
+}
+p {
+	color: #b3aeb5;
+	line-height: 1.7;
+	font-weight: 200;
+}
+// .top-bar p {
+// 	font-weight: 500;
+// 	color: $777;
+// 	line-height: 2.4;
+// }
+
+.lead {
+	color: #d5c1f2;
+	margin-bottom: convert-to-rem(70px, $rem-base);
+}
+.lead:nth-of-type(2) {
+	font-size: initial;
+	margin-bottom: convert-to-rem(20px, $rem-base);
+}
+
+/* Logos & Icons 
+=========================================== */
+
+.main-logo {
+	display: inline-block;
+	width: convert-to-rem(124px, $rem-base);
+	height: convert-to-rem(34px, $rem-base);
+	text-indent: 100%;
+	white-space: nowrap;
+	background: url('../images/dist/main-logo.png') no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+
+	@media #{$small-only} {
+		width: convert-to-rem(82px, $rem-base);
+	}
+
+
+}
+
+/* Buttons
+=========================================== */
+
+.btn-dl {
+	color: inherit;
+	border: solid 2px;
+	margin-right:  convert-to-rem(10px, $rem-base);
+	padding: 12px 22px;
+	display: inline-block;
+
+	&:hover {
+		background-color: $white;
+		border-color: $white;
+		color: #957bba;
+	}
+}
+
+
+
