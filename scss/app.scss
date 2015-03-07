@@ -95,7 +95,15 @@
 =========================================== */
 
 .panel {
-	margin-top: convert-to-rem( 70px, $rem-base);
+	margin-top: convert-to-rem( 10px, $rem-base);
+	background-image: url('../imgages/dist/form-panel-bg.png');
+	background-repeat: repeat-x;
+	border: none;
+	border-bottom: solid 1px #e0dfdf;
+	padding: 55px 0;
+	margin-top: 10px;
+	margin-bottom: 100px;
+
 }
 
 .top-bar {
