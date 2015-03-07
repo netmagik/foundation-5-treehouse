@@ -67,6 +67,22 @@
 	}
 }
 
+.ft {
+	margin-bottom: 72px;
+}
+.ft-copy {
+	padding-top: 30px;
+}
+.ft-copy p { 
+	width: 90%;
+}
+
+.ft-icon,
+.headline {
+	background-image: url('../images/dist/main-bg.png');
+	background-color: #a085c6;
+}
+
 .device {
 	width: 345px;
 	height: 589px;
@@ -162,8 +178,54 @@ p {
 
 }
 
+.ft-icon {
+	width: 94%;
+	height: 196px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 270px -180px;
+	background-size: 140%;
+}
+.ft-icon.friends {
+	background-position: -500px 0px;
+}
+.ft-icon.cloud {
+	background-position: 260px 0px;
+}
+.ft-icon:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 164px;
+	height: 102px;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	margin: auto;
+	background: url('../images/dist/feature-icons.png') no-repeat;
+	background-size: 100%;
+}
+.friends:before {
+	background-position: 0 -105px;
+}
+.cloud:before {
+	background-position: 0 -210px;
+}
+
+
+[class*="fi-"] {
+	margin-right: convert-to-rem(8px, $rem-base);
+}
+
 /* Buttons
 =========================================== */
+
+.button {
+	font-weight: normal;
+	background: transparent;
+	box-shadow: none;
+}
 
 .btn-dl {
 	color: inherit;
@@ -179,5 +241,33 @@ p {
 	}
 }
 
+.btn-submit {
+	font-size: 1.8em;
+	position: absolute;
+	padding: 5px;
+	border: none;
+	right: 65px;
+	bottom: -20px;
 
+	&:hover {
+		background: none;
+		color: #8c73b0;
+	}
+}
 
+.panel .btn-dl:hover {
+	background-color: #ccc;
+	color: #f7f7f7;
+	border-color: #ccc;
+}
+
+/* Form
+=========================================== */
+
+input.phone-txt {
+	padding: 22px 12px;
+	width: 90%;
+	background-color: #dcdfe1;
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+}

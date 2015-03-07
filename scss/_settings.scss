@@ -119,7 +119,7 @@ $base        : #AAAAAA;
 $pur: 			#a085c6;
 
 // We use these as default colors throughout
-$primary-color: orange;
+$primary-color: $base;
 // // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
@@ -167,7 +167,7 @@ $screen: "only screen";
 // $portrait: "#{$screen} and (orientation: portrait)";
 
 $small-up: $screen;
-$small-only: #{$screen} and (max-width: #{upper-bound($small-range)});
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
 // $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
 // $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
@@ -454,7 +454,7 @@ $header-font-color: $white;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+ $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
