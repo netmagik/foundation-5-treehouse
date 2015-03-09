@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       images : {
         files : ['images/src/*.{png,jpg,gif}'],
         tasks : ['newer:imagemin']
-      }, // watch images added to src
+      }, // watch images added to src folder
 
     },
 
