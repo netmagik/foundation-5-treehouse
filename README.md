@@ -1,34 +1,7 @@
-<<<<<<< HEAD
-# Foundation libsass template
+Foundation Treehouse course
 
-This is a template to start your own project that uses Grunt and libsass!
+It involved building a page for an App
 
-## Requirements
+It includes nested columns, foundation icons, custom background, and a form
 
-You'll need to have the following items installed before continuing.
-
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
-
-## Quickstart
-
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
-```
-
-While you're working on your project, run:
-
-`grunt`
-
-And you're set!
-
-## Directory Structure
-
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
-=======
-# foundation-5-treehouse
-Foundation 5 Treehouse Example
->>>>>>> bc3f236... Initial commit
+Media Queries control what shows at certain breakpoints
